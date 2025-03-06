@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listagem de Vídeos - YouTube</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #ff0000;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    /* Container do grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Estilização dos cards de vídeo */
+    .video-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .video-card:hover {
+      transform: scale(1.03);
+    }
+
+    .video-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .video-card .video-info {
+      padding: 10px;
+    }
+
+    .video-card .video-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    .video-card .video-info p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    /* Media query para ajustes em telas menores */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Listagem de Vídeos</h1>
+  </header>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 1">
+        <div class="video-info">
+          <h3>Título do Vídeo 1</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 2">
+        <div class="video-info">
+          <h3>Título do Vídeo 2</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 3">
+        <div class="video-info">
+          <h3>Título do Vídeo 3</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 4">
+        <div class="video-info">
+          <h3>Título do Vídeo 4</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 5">
+        <div class="video-info">
+          <h3>Título do Vídeo 5</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+      <div class="video-card">
+        <img src="https://via.placeholder.com/300x170" alt="Thumbnail do Vídeo 6">
+        <div class="video-info">
+          <h3>Título do Vídeo 6</h3>
+          <p>Descrição breve do vídeo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Seu Nome - Todos os direitos reservados.
+  </footer>
+</body>
+</html>
